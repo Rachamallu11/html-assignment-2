@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registration Form </title>
+    </head>
+    <body>
+        <form>
+            <fieldset style="max-width:500px;">
+                <legend>User Profile</legend>
+            <label for="un">User name</label>
+                <input type="text" name="username" placeholder="Your name.."id="un" required><br>
+
+                <label for="un1">Address</label>
+                <input type="text" name="address" placeholder="Your address.."id="un1"><br>
+
+                <label for="un2">City</label>
+                <input list="City" name="City" id="un2"><br>
+                <datalist id="City">
+                    <option value="Banglore"></option>
+                    <option value="Noida"></option>
+                    <option value="Hyderabad"></option>
+                    <option value="Vijaywada"></option>
+                    <option value="Guntur"></option>
+                    <option value="Mumbai"></option>
+                </datalist>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="email here.."id="email"><br>
+
+                <label for="mob">mobile</label>
+                <input type="tel" name="mobile" placeholder="mobile no ..."id="mob" required pattern="9[0-9]{9}"><br>
+
+                <label for="Select Course">Select Course</label>
+                <select name="course">
+                    <option value="B-Tech">B-tech</option>
+                    <option value="B-Hons">B-Hons</option>
+                    <option value="B-Phrm">B-Phrm</option>
+                    <option value="Bio-Tech">Bio-Tech</option>
+                    <option value="D-Phrm">D-Phrm</option>
+                    <option value="Bio-Tech">Bio-Tech</option>
+                </select><br>
+                
+
+            
+                <label for="un3">Date of Birth</label>
+                <input type="datetime-local" name="Date of Birth" id="un3"><br>
+            
+            </fieldset>
+
+                <fieldset style="max-width:500px;">
+                <legend>Hobbies</legend>
+
+                <label for="pc">Playing Chess</label><br>
+                <input type="checkbox" name="Playing Chess" id="pc">
+
+                <label for="wc">Watching Movies</label><br>
+                <input type="checkbox" name="Watching Movies" id="wc">
+
+                <label for="rb">Reading Books</label><br>
+                <input type="checkbox" name="Reading Books" id="rb">
+            </fieldset>
+
+
+                <fieldset style="max-width:500px;">
+                    <legend>Time Slot</legend>
+                    <input type="radio" name="slot" id="r1" value="morning">
+                    <label for="r1">Morning[8:00-11:00]</label><br>
+                    <input type="radio" name="slot" id="r2" value="Afternoon">
+                    <label for="r2">Evening[11:00-12:00]</label><br>
+                    <input type="radio" name="slot" id="r3" value="evening">
+                    <label for="r3">Evening[12:00-5:00]</label><br>
+                </fieldset>
+
+            <td>
+                <input type="Submit" value="Submit">
+            </td>
+
+            <td>
+                <input type="reset" value="reset">
+            </td>
+                
+                
+                </form>
+
+    </body>
+</html>
